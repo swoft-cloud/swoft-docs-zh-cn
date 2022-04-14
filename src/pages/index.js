@@ -75,7 +75,7 @@ export default function Home() {
           animation={false}
           className={styles.bigMargin}
         >
-          <AbilitySvg width={520} height="100%" />
+          <AbilitySvg width="80%" height="100%" />
         </HomeHeroDeeds>
 
         <HomepageFeatures className={styles.bigMargin} />
@@ -86,7 +86,7 @@ export default function Home() {
           layout="left"
           className={styles.bigMargin}
         >
-          <SpeedSvg width={520} height="100%"/>
+          <SpeedSvg width="80%" height="100%"/>
         </HomeHeroDeeds>
 
         <Extensibility />
@@ -97,14 +97,14 @@ export default function Home() {
           layout="right"
           className={styles.bigMargin}
         >
-          <CoverSvg width={520} height="100%"/>
+          <CoverSvg width="80%" height="100%"/>
         </HomeHeroDeeds>
 
         <Community title="丰富的社区"
           subtitle="专业的社区服务"
           layout="left"
           className={styles.bigMargin}>
-            <CommunitySvg width={720} height="100%"/>
+            <CommunitySvg width="85%" height="100%"/>
           </Community>
       </main>
     </Layout>
