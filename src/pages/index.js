@@ -9,6 +9,11 @@ import Bash01Png from "@site/static/img/bash01.png";
 import Github from "@site/static/img/Github.svg";
 import Logo from "@site/static/img/logo.svg";
 import AbilitySvg from "@site/static/img/ability.svg";
+import SpeedSvg from "@site/static/img/speed.svg";
+import CoverSvg from "@site/static/img/cover.svg";
+import CommunitySvg from "@site/static/img/Community.svg";
+import Extensibility from "@site/src/components/Extensibility";
+import Community from "@site/src/components/Community";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -70,8 +75,10 @@ export default function Home() {
           animation={false}
           className={styles.bigMargin}
         >
-          <AbilitySvg width={400} />
+          <AbilitySvg width={520} height="100%" />
         </HomeHeroDeeds>
+
+        <HomepageFeatures className={styles.bigMargin} />
 
         <HomeHeroDeeds
           title="我的速度快"
@@ -79,8 +86,10 @@ export default function Home() {
           layout="left"
           className={styles.bigMargin}
         >
-          <AbilitySvg width={400} />
+          <SpeedSvg width={520} height="100%"/>
         </HomeHeroDeeds>
+
+        <Extensibility />
 
         <HomeHeroDeeds
           title="我稳定"
@@ -88,10 +97,15 @@ export default function Home() {
           layout="right"
           className={styles.bigMargin}
         >
-          <AbilitySvg width={400} />
+          <CoverSvg width={520} height="100%"/>
         </HomeHeroDeeds>
 
-        <HomepageFeatures />
+        <Community title="丰富的社区"
+          subtitle="专业的社区服务"
+          layout="left"
+          className={styles.bigMargin}>
+            <CommunitySvg width={720} height="100%"/>
+          </Community>
       </main>
     </Layout>
   );

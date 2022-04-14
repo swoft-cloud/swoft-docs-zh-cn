@@ -1,0 +1,13 @@
+.extent {
+  box-sizing: border-box;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  display: flex;
+  padding: 16px;
+  
+}
+
+.featureSvg {
+  height: 48px;
+  width: 48px;
+}

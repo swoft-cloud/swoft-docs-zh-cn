@@ -43,31 +43,48 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: "惊人能力5",
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
 ];
 
-function Feature({ Svg, title, description }) {
+function Extent({ Svg, title, description, colNumber }) {
   return (
-    <div className={clsx("col col--3")}>
-      <Svg className={styles.featureSvg} role="img" />
-      <h3 className="hero__subtitle">{title}</h3>
-      <div className="padding-vert--md">
-        <p>{description}</p>
+    <div className={clsx("col", colNumber)}>
+      <div className={clsx(styles.extent, "margin-bottom--md")}>
+        <Svg className={clsx(styles.featureSvg)} role="img" />
+        <div className="col">
+          <h3 className="hero__subtitle">{title}</h3>
+          <p className="margin-bottom--none">{description}</p>
+        </div>
       </div>
     </div>
   );
 }
 
-export default function HomepageFeatures() {
+export default function Extensibility() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <h2 className="hero__title margin-bottom--lg">惊人的能力介绍</h2>
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <div className="container">
+      <h2 className="hero__title">丰富的企业扩展</h2>
+      <p className="hero_subtitle">
+        我们拥有大量精心维护的软件包，这意味着您已经准备好应对任何事情。解决复杂的企业需求。
+      </p>
+      <div className="row margin-top--xl">
+        {FeatureList.map((props, idx) =>
+          idx<2 ? (
+            <Extent key={idx} {...props} colNumber="col--6" />
+          ) : (
+            <Extent key={idx} {...props} colNumber="col--4" />
+          )
+        )}
       </div>
-    </section>
+    </div>
   );
 }
