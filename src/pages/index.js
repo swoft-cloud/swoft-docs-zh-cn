@@ -6,12 +6,12 @@ import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import HomeHeroDeeds from "@site/src/components/HomeHeroDeeds";
 import Bash01Png from "@site/static/img/bash01.png";
-import Github from "@site/static/img/Github.svg";
+import Github from "@site/static/img/github.svg";
 import Logo from "@site/static/img/logo.svg";
 import AbilitySvg from "@site/static/img/ability.svg";
 import SpeedSvg from "@site/static/img/speed.svg";
 import CoverSvg from "@site/static/img/cover.svg";
-import CommunitySvg from "@site/static/img/Community.svg";
+import CommunitySvg from "@site/static/img/community.svg";
 import Extensibility from "@site/src/components/Extensibility";
 import Community from "@site/src/components/Community";
 
