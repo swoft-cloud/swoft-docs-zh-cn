@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "swoft",
   tagline: "可以用于构建高性能的Web系统、API、中间件、基础服务、微服务协程框架。",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://aesthetic-strudel-597114.netlify.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
