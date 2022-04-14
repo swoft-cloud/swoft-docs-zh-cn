@@ -1,0 +1,47 @@
+.po_relative {
+    position: relative;
+}
+
+.po_absolute {
+    position: absolute;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.halfLeft {
+    left: 45%;
+}
+.halfRight {
+    right: 20%;
+}
+
+.halfLeft1 {
+    left: 10%;
+}
+
+
+
+
+.cube{
+    width: 48px;
+    z-index: -1;
+}
+
+
+
+.cubeAnimation {
+    -webkit-animation: cube-float 3s ease-in-out infinite!important;
+    animation: cube-float 3s ease-in-out infinite!important;
+  }
+  
+  @keyframes cube-float {
+    50% {
+      transform: translateY(.55rem)
+    }
+  }

@@ -1,0 +1,88 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6.9rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sloganTitle {
+  font-size: 5rem;
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  font-weight: 900;
+}
+
+.subjectTitle {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+
+}
+
+[data-theme='dark'] .sloganTitle {
+  background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] .subjectTitle {
+  color: var(--ifm-color-emphasis-400);
+}
+
+
+[data-theme='light'] .sloganTitle > span {
+  background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .sloganTitle {
+  color:var(--ifm-color-primary-contrast-foreground);
+}
+
+[data-theme='light'] .subjectTitle {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.svgColor {
+  color: var(--ifm-font-color-base);
+}
+
+
+.logoAnimation {
+  -webkit-animation: logo-float 5s ease-in-out infinite!important;
+  animation: logo-float 5s ease-in-out infinite!important;
+  transform: scale(1.05);
+}
+
+@keyframes logo-float {
+  50% {
+    
+    transform: translateY(1.25rem);
+  }
+}
+
+
+.bigMargin {
+  box-sizing: border-box;
+  margin: 13rem 0 5rem;
+}
